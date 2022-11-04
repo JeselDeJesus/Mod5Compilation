@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="script.js">
+        </script>
+
+    </head>
+    <body>
+        <script>
+            // Inheritance
+        class myToy
+        {
+            constructor()
+            {
+                this.brand = "Toyota";
+            }
+        }
+
+        class Vehicle extends myToy
+        {
+            constructor(model, variant)
+            {
+                super();
+                this.model = model;
+                this.vairant = variant;
+            }
+        }
+
+        var y = new Vehicle("2020", "Wigo");
+
+        alert(y.brand);
+        </script>
+    </body>
+
+</html>
